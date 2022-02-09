@@ -1,0 +1,256 @@
+
+header{
+    background-image: linear-gradient(rgb(12, 145, 197), rgb(158, 218, 241));
+    color: white;
+}
+h1{
+    color: rgb(233, 229, 229);
+}
+
+.carousel{
+    width: 95%;
+    height: auto;
+    object-fit: cover;
+}
+
+.imag{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 2%;
+}
+.fond{
+    background-image: linear-gradient(rgb(12, 145, 197), rgb(158, 218, 241));
+    color: white;
+}
+
+footer {
+    background-image: linear-gradient(rgb(12, 145, 197), rgb(158, 218, 241));
+    
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+footer ul li {
+    font-size: 1rem;
+    padding: 1% 5%;
+}
+
+footer ul li a {
+    color: white;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.instagram:hover {
+    color: #833AB4;
+}
+
+.linkedin:hover {
+    color: #0e76a8;
+}
+
+
+.VelozIn {
+    background-image: linear-gradient(rgb(12, 145, 197), rgb(158, 218, 241));
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 12vh;
+    position: sticky;
+    top: 2;
+    font-family: Arial;
+    font-size: 40px;
+}
+
+.VelozIn {
+    animation: VelozIn 10s infinite;
+}
+
+@keyframes VelozIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100vw) skewX(70deg);
+    }
+    60% {
+        opacity: 1;
+        transform: skewX(-20deg);
+    }
+    80% {
+        transform: skewX(15deg);
+    }
+}
+
+
+/*
+img {
+    max-width: 1200px;
+}
+
+header {
+    display: grid;
+    grid-column: 1/2;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    gap: 10%;
+}
+
+footer {
+    display: grid;
+    grid-column: 1/2;
+    background-color: rgb(12, 145, 197);
+    color: rgba(241, 243, 247, 0.85);
+}
+
+header {
+    display: grid;
+    grid-column: 1/2;
+    width: 100%;
+}
+
+.cabeza {
+    background-image: linear-gradient(rgb(12, 145, 197), rgb(158, 218, 241));
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: sticky;
+    height: 12vh;
+    top: 0;
+}
+
+.cabeza ul {
+    display: flex;
+    width: 45%;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 1%;
+}
+
+.cabeza li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right:30px
+}
+
+.cabeza ul li {
+    cursor: pointer;
+    
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.galeria__fotos {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 2%;
+    transition: all 2s;
+}
+
+.galeria__fotos:hover {
+    transform: scale(1.5, 1.5);
+    z-index: 100;
+    box-shadow: -1px 1px 5px 15px rgba(12, 145, 197, 0.75);
+    -webkit-caja-sombra: -1px 1px 5px 15px rgba(12, 145, 197, 0.75);
+    -moz-box-shadow: -1px 1px 5px 15px rgba(12, 145, 197, 0.75);
+}
+
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    border: 1px;
+    padding: 8px;
+}
+
+h3,
+th,
+td {
+    background-image: linear-gradient(rgb(12, 145, 197), rgb(158, 218, 241));
+    color: rgb(12, 145, 197);
+    text-align: center;
+    border: 1px;
+    padding: 8px;
+}
+
+
+th,
+tr,
+td {
+    background-color: rgb(12, 145, 197);
+    color: rgba(255, 255, 255, 0.973);
+    border-left: none;
+    border-right: none;
+}
+
+li {
+    list-style: none;
+}
+
+.table {
+    min-height: .01%;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+form,
+p {
+    color: rgba(21, 138, 233, 0.85);
+    border: 3px;
+    padding: 8px;
+}
+
+@media screen and (max-width: 500px) {
+    .table-responsive {
+        width: 100%;
+        color: rgba(255, 255, 255, 0.973);
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid #ddd;
+        margin-bottom: 0;
+        white-space: nowrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    header {
+        /* Reverse the axis of the header, making it vertical. */
+        flex-direction: column;
+        /* Align items to the begining (the left) of the header. */
+        align-items: flex-start;
+    

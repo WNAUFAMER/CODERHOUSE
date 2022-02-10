@@ -1,0 +1,30 @@
+.VelozIn {
+    background-image: linear-gradient(rgb(12, 145, 197), rgb(158, 218, 241));
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 12vh;
+    position: sticky;
+    top: 2;
+    font-family: Arial;
+    font-size: 40px;
+    animation: VelozIn 10s infinite;
+
+    & @keyframes VelozIn {
+        0% {
+            opacity: 0;
+            transform: translateX(-100vw) skewX(70deg);
+        }
+        60% {
+            opacity: 1;
+            transform: skewX(-20deg);
+        }
+        80% {
+            transform: skewX(15deg);
+        }
+    }
+    
+}
+
+

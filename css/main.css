@@ -1,0 +1,62 @@
+header {
+  background-image: linear-gradient(#0c91c5, #9edaf1);
+  color: white; }
+
+h1 {
+  color: #e9e5e5; }
+
+.carousel {
+  width: 60%;
+  height: 60%;
+  object-fit: cover; }
+
+.imag {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 2%; }
+
+.fond {
+  background-image: linear-gradient(#0c91c5, #9edaf1);
+  color: white; }
+
+footer {
+  background-image: linear-gradient(#0c91c5, #9edaf1); }
+  footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: center; }
+  footer ul li {
+    font-size: 1rem;
+    padding: 1% 5%; }
+  footer ul li a {
+    color: white; }
+  footer.facebook:hover {
+    color: #3b5998; }
+  footer.instagram:hover {
+    color: #833AB4; }
+  footer.linkedin:hover {
+    color: #0e76a8; }
+
+.VelozIn {
+  background-image: linear-gradient(#0c91c5, #9edaf1);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 12vh;
+  position: sticky;
+  top: 2;
+  font-family: Arial;
+  font-size: 40px;
+  animation: VelozIn 10s infinite; }
+
+@keyframes VelozIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100vw) skewX(70deg); }
+  60% {
+    opacity: 1;
+    transform: skewX(-20deg); }
+  80% {
+    transform: skewX(15deg); } }

@@ -1,0 +1,41 @@
+
+footer {
+    background-image: linear-gradient(rgb(12, 145, 197), rgb(158, 218, 241));
+
+
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+}
+
+    ul li {
+    font-size: 1rem;
+    padding: 1% 5%;
+}
+
+    ul li a {
+    color: white;
+}
+
+    &.facebook{
+        &:hover {
+            color: #3b5998
+
+    };
+}
+
+    &.instagram{
+
+        &:hover {
+        color: #833AB4;
+}
+    }
+    
+    &.linkedin{
+
+        &:hover {
+        color: #0e76a8; 
+    }
+}
+}

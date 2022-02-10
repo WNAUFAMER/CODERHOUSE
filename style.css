@@ -7,15 +7,11 @@ h1{
     color: rgb(233, 229, 229);
 }
 
-
-
-
 .carousel{
-    width: 95%;
-    height: auto;
+    width: 60%;
+    height: 60%;
     object-fit: cover;
 }
-
 .imag{
     width: 200px;
     height: 200px;

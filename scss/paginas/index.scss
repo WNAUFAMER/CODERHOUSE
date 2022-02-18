@@ -1,0 +1,88 @@
+header{
+    background-image: map-get($colores , primario );
+    color: map-get($colores , secundario );
+}
+
+h1{ color:map-get($colores , secundario ) ;}
+
+.carousel{
+    @include carrousel( 60% , 60%, cover);
+}
+.imag{
+    @include imag( 200px , 200px, cover,2%);
+}
+.fond{
+    background-image: map-get($colores , primario );
+    color: map-get($colores , secundario );
+
+
+}
+    .VelozIn {
+        background-image: linear-gradient(rgb(12, 145, 197), rgb(158, 218, 241));
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 12vh;
+        position: sticky;
+        top: 2;
+        font-family: Arial;
+        font-size: 40px;
+        animation: VelozIn 10s infinite;
+
+    }
+    
+        & @keyframes VelozIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-100vw) skewX(70deg);
+            }
+            60% {
+                opacity: 1;
+                transform: skewX(-20deg);
+            }
+            80% {
+                transform: skewX(15deg);
+            }
+        }
+        
+
+
+footer {
+    background-image: map-get($colores , primario );
+
+
+    ul {
+        @include flexbox(none , center)
+}
+
+    ul li {
+    font-size: map-get($medidas , norma );
+    padding: map-get($medidas , margen );
+}
+
+    ul li a {
+    color: map-get($colores , segundo)
+}
+
+    &.facebook{
+        &:hover {
+            color: map-get($colores , tercero)
+
+    };
+}
+
+    &.instagram{
+
+        &:hover {
+        color: map-get($colores , cuarto );
+}
+    }
+    
+    &.linkedin{
+
+        &:hover {
+        color:map-get($colores , quinto); 
+    }
+}
+} 

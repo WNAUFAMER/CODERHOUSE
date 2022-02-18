@@ -1,0 +1,14 @@
+
+Primero que todo utilice la etiqueta meta name="keywords"  en todos las paginas del sitio  , en el  content puse palabras claves para el motor de busqueda.  
+<meta name="keywords" content="tienda de tecnologia,hardward,playstation,xbox,mouse,pc,notebooks,asus,lenovo,xbox,accesorios">
+
+
+
+Agrege a cada pagina la etiqueta meta name ="description"  y el content puse una mini descripcion para el index y cada pagina del sitio . 
+
+<meta name="description" content="Somos la tienda de gaming y la tecnologia con la mejor relacion-calidad precio del mercado ">
+<meta name="description" content="Encontraras los accesorios para jugar a la consola y pc con la mejor relacion-calidad precio del mercado ">
+<meta name="description" content="Encontraras las consolas de la actualidad con la mejor relacion-calidad precio del mercado ">
+<meta name="description" content="Contactanos para sacarte todas las dudas">
+<meta name="description" content="Encontraras las notebooks con la mejor relacion-calidad precio del mercado ">
+<meta name="description" content="Unite a este gran equipo de trabajo">

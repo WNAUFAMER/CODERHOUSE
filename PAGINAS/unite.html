@@ -22,8 +22,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
 </head>
 <body>
     <!-- header -->
-    <header class="cabeza container-fluid" >
-        <h1>SPACE STORE</h1>
+    <header class="container-fluid" >
         <nav class="navbar navbar-expand-lg navbar-light m-auto p-5">
             <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -57,30 +56,49 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
         </nav>
     </header>
         <main>
-        <h2 class="cabeza  VelozIn">UNITE A NUESTRO EQUIPO</h2>
-        <p class="fs-3"> Te invitamos a sumarte a esta empresa en pleno crecimiento con un gran equipo de personas.Completa con tus datos y embebe en formato.pdf tu cv </p>
-        <form>
-            <label class="fs-4">Nombre</label>
-            <input type="text">
-
-            <div>
-                <label class="fs-4">Apellido</label>
-                <input type="text">
+        <h2 class="VelozIn">UNITE A NUESTRO EQUIPO</h2>
+        <form class="row g-3 fs-5">
+            <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Nombre/s Completo</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Juan Alejandro">
             </div>
-            <div>
-                <label class="fs-4">DNI</label>
-                <input type="number"
-                min="6000000" max="100000000">
+            <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Apellido/s Completo</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Torres">
             </div>
-            <div>
-                <label class="fs-4">Adjunte su CV </label>
-                <input type="file">
-            </div>         
-            <div>
-                <input type="submit">  
+            <div class="col-6">
+                <label for="inputAddress" class="form-label">Correo Electonico</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="juanitotorres@gmail.com">
             </div>
-            
-        </form>
+            <div class="col-6">
+                <label for="inputAddress2" class="form-label">Numero de Telefono</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="01158353684">
+            </div>
+            <div class="col-md-3">
+                <label for="inputCity" class="form-label">Provincia</label>
+                <input type="text" class="form-control" id="inputCity"  placeholder="C.A.B.A">
+            </div>
+            <div class="col-md-3">
+                <label for="inputCity" class="form-label">Localidad</label>
+                <input type="text" class="form-control" id="inputCity"  placeholder="C.A.B.A">
+            </div>
+            <div class="col-md-4">
+                <label for="inputAddress3" class="form-label">Domicilio</label>
+                <input type="text" class="form-control" id="inputCity"  placeholder="Av.Cordoba">
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Numero</label>
+                <input type="text" class="form-control" id="inputZip"placeholder="1268">
+            </div>
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Adjuntar CV en Formato PDF.</label>
+                <input class="form-control" type="file" id="formFile">
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+                </div>
+            </div>
+            </form>
         </main>
         <footer>
             <ul>

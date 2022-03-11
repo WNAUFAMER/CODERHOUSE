@@ -17,6 +17,12 @@ h1{ color:map-get($colores , secundario ) ;}
 
 
 }
+
+.letras{
+    color: map-get($colores , primario);
+}
+
+
     .VelozIn {
         background-image: map-get($colores , primario );
         color: map-get($colores , secundario );

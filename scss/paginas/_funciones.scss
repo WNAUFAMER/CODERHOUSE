@@ -1,11 +1,11 @@
 
-    $colores: {
+    $colores: (
     primario : linear-gradient(rgb(12, 145, 197), rgb(158, 218, 241)),
     secunario: rgb(255, 255, 255),
     tercero: rgb(59, 89, 152),
     cuarto:rgb(131, 58, 180),
     quinto: rgb(14, 118, 168),  
-    };
+    );
 
     %carrousel {
         width: 60%;
@@ -20,10 +20,10 @@
         object-fit: $object;
     }
 
-    $medidas:{
+    $medidas:(
     norma: 1rem,
-    margen: 1% 5%;
-}
+    margen: 1% 5%,
+    );
 
 
     %imag {
